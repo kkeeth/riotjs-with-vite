@@ -1,0 +1,23 @@
+<app>
+  <div>
+    <h1> Riotjs + ViteJS </h1>
+    <c-button> { state.total } </c-button>
+    <c-button primary="true" onclick={ () => update({ total: state.total + 1 }) }> Add </c-button>
+    <c-button danger="true" onclick={ () => update({ total: state.total - 1 }) }> Delete </c-button>
+  </div>
+  <script>
+    /** Load the custom button **/
+    import cButton from './c-button.riot';
+
+    export default {
+      /** Define the custom button **/
+      components : {
+        cButton
+      },
+      /** State of the counter **/
+      state : {
+        total: 0
+      }
+    }
+  </script>
+</app>
