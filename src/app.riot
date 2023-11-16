@@ -4,15 +4,19 @@
     <c-button> { state.total } </c-button>
     <c-button primary="true" onclick={ () => update({ total: state.total + 1 }) }> Add </c-button>
     <c-button danger="true" onclick={ () => update({ total: state.total - 1 }) }> Delete </c-button>
+
+    <sidebar />
   </div>
   <script>
     /** Load the custom button **/
-    import cButton from './c-button.riot';
+    import cButton from './components/c-button.riot';
+    import Sidebar from './components/global/sidebar/sidebar.riot';
 
     export default {
       /** Define the custom button **/
       components : {
-        cButton
+        cButton,
+        Sidebar,
       },
       /** State of the counter **/
       state : {

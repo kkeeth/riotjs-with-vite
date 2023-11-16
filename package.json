@@ -28,6 +28,7 @@
     "riot": "^9.1.1"
   },
   "devDependencies": {
+    "@riotjs/hot-reload": "^9.0.1",
     "rollup": "^4.4.1",
     "rollup-plugin-riot": "^9.0.2",
     "vite": "^5.0.0"

@@ -1,6 +1,11 @@
-import "./src/style.css";
-import * as riot from "riot";
-import App from "./src/app.riot";
+import "@riotjs/hot-reload";
+import { component } from "riot";
 
-const mountApp = riot.component(App);
-mountApp(document.getElementById("root"));
+import "./src/style.css";
+import App from "./src/app.riot";
+import registerGlobalComponents from "./src/register-global-components";
+
+// register
+registerGlobalComponents();
+
+component(App)(document.getElementById("root"));
