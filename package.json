@@ -2,10 +2,12 @@
   "name": "riotjs-with-vite",
   "version": "1.0.0",
   "description": "via https://dev.to/steeve/riotjs-vitejs-tutorial-fpn",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
