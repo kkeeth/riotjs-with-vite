@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import riot from "rollup-plugin-riot";
 
 export default defineConfig({
-  root: process.cwd() + "/client",
+  root: process.cwd(),
   plugins: [riot()],
   build: {
     minify:
