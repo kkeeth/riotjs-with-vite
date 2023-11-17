@@ -25,10 +25,13 @@
   },
   "homepage": "https://github.com/kkeeth/riotjs-with-vite#readme",
   "dependencies": {
+    "@riotjs/route": "^8.0.2",
     "riot": "^9.1.1"
   },
   "devDependencies": {
+    "@riotjs/compiler": "^9.0.6",
     "@riotjs/hot-reload": "^9.0.1",
+    "@riotjs/lazy": "^9.0.0",
     "rollup": "^4.4.1",
     "rollup-plugin-riot": "^9.0.2",
     "vite": "^5.0.0"
